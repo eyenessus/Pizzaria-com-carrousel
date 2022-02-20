@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Jerry</title>
+    <script src="ultimate.js" defer></script>
+</head>
+<body>
+    <div>
+        <a href="./index.html"><img id="logo" src="https://cardapio.menu/assets/img/tmp/placeholder_restaurant.jpg" alt="Logo da pizzaria"></a>
+    </div>
+    <div>
+        <h1 id="titulo">Pizaria Jerry</h1>
+        <p id="historia">Nossas pizzas são famosas por sua massa fina e crocante, natural e sem fermento.
+            A Jeri Pizzas vem trabalhando com muita dedicação para servir bem à todos os seu clientes, utilizando sempre produtos de qualidade comprovada.
+            Oferecemos atendimento informatizado no qual seu cadastro e identificação são automáticos a partir do primeiro pedido.
+            Uma equipe de entregadores sempre esperando sua ligação para atende-lo da melhor maneira possível.</p>
+            
+    </div>
+    <div id="titulopedido">
+        <h1>FAÇA JÁ SEU PEDIDO</h1>
+    </div>
+    <div>
+        <h3 id="Destaques" class="azul">DESTAQUES</h3>
+        <div>
+<form action="verificarcep.html" method="POST">
+    <input type="text" name="cep" for="cep" id="cep">
+    <input type="submit" value="Verificar CEP"name="cep" for="cep" id="cep">
+</br>
+</form>
+</div>
+        <link rel="stylesheet" href="style.css">
+    </div>
+    <div id="slideshow">
+        
+        <div class="myslides">
+            <div id="textonumero"> 1</div>
+            <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2019/05/pizza.jpg" alt="pizza" id="imagem">
+            <div id="texto">Imagem 1</div>
+        </div>
+
+        <div class="myslides">
+            <div id="textonumero">2</div>
+            <img src="https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2021/10/17/1533441312-shutterstock378226756.jpg" alt="Mussarela" id="imagem">
+            <div id="texto">Imagem 2</div>
+        </div>
+
+        <div class="myslides">
+            <div id="textonumero">3</div>
+            <img src="https://static.baratocoletivo.com.br/2018/0817/oferta_15345349963183_OFERTA.jpg" alt="Calabresa" id="imagem">
+            <div id="texto">Imagem 3</div>
+        </div>
+
+        <div class="myslides">
+            <div id="textonumero">4</div>
+            <img src="https://www.academiaassai.com.br/sites/default/files/styles/noticia_1020x640/public/sabores_de_pizza_morango_com_chocolate.jpg?itok=DlQsbz89" alt="sabores_de_pizza_morango_com_chocolate" id="imagem">
+            <div id="texto">Imagem 4</div>
+        </div>
+
+        <div class="myslides">
+            <div id="textonumero">5</div>
+            <img src="https://quintalfratelli.com.br/wp-content/uploads/2018/10/pizza-de-chocolate-com-MMS.jpg" alt="pizza cholocate com MMS" id="imagem">
+            <div id="texto">Imagem 5</div>
+        </div>
+
+        <div id="voltar" onclick="controla(-1)"> < </div>
+        <div id="proximo" onclick="controla(1)"> > </div>
+
+        <div id="naocontener">
+            <span id="botaonavegadores" onclick="slideatual(1)" class="botaonavegadores" ></span>
+            <span id="botaonavegadores" onclick="slideatual(2)" class="botaonavegadores" ></span>
+            <span id="botaonavegadores" onclick="slideatual(3)" class="botaonavegadores" ></span>
+            <span id="botaonavegadores" onclick="slideatual(4)" class="botaonavegadores" ></span>
+            <span id="botaonavegadores" onclick="slideatual(5)" class="botaonavegadores" ></span>
+        </div>
+       
+        
+    </div>
+    <div id="tabelas">
+        <table id="tabelasalgadas" class="tabela">
+            <h1 id="borboleta" class="borboleta">PIZZAS SALGADAS</h1>
+            <tr>
+                <th>SABOR</th>
+                <th>VALOR</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td>
+                <td>R$10,00</td>
+            </tr>
+            <tr>
+                <td>Calabresa</td>
+                <td>R$ 20,00</td>    
+            </tr>
+           <tr>
+               <td>Sasha Alam</td>
+               <td>R$ 60,00</td>
+           </tr>
+        </table>
+    </div>
+    <div id="tabeladoce">
+        <table id="tabeladoces" class="tabela">
+            <h1>PIZZAS DOCES</h1>
+            <tr>
+                <th>SABOR</th>
+                <th>VALOR</th>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>R$10,00</td>
+            </tr>
+            <tr>
+                <td>MMS</td>
+                <td>R$ 20,00</td>    
+            </tr>
+           <tr>
+               <td>NUTELLA</td>
+               <td>R$ 60,00</td>
+           </tr>
+        </table>
+        
+    </div>
+    
+<div id="formulariodiv">
+    <h2 id="textoform">PEDIDO EXPRESSO</h2>
+    
+    
+   
+    <form id="formulario" action="pedidoconfirmado.html">
+
+        <img  id="moto"src="https://imagensfree.com.br/wp-content/uploads/2021/11/entregador-ifood-png-motoqueiro-300x276.png" alt="motoboy"><br>
+
+        
+        <label for="nome">Nome Completo</label>
+        <input type="text" for="nome" id="nomeCompleto" placeholder="Nome Completo" required>
+    
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone" placeholder="Numero de telefone" name="telefone" maxlength="15" minlength="15" required>
+    
+        <label for="sabordapizza">Sabor da pizza</label>
+        <input type="text" name="sabordapizza" id="sabor" required>
+
+        <label for="tamanho"></label>
+        <input type="range"id="tamanho" name ="tamanho">
+    
+        <fieldset>
+            <legend>Forma de pagamento</legend>
+            <input type="radio" id="dinheiro" name ="dinheiro">Dinheiro   
+            <input type="radio" id="cartao" name ="cartao" value="cartao"> Cartão
+        </fieldset>
+    <br>
+        <input type="submit" value ="Comprar" id="butao">
+    </br>
+    </form>
+
+</div>
+ 
+    
+</body>
+</html>
